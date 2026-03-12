@@ -1,4 +1,4 @@
-# Chi sono?
+# Who i am?
 
 Hi 👋, I’m Stefano Ceriani, or Stefanoschio depending on how you know me.
 I mainly work on creating websites and setting up Minecraft plugins, but that’s not all I do…
