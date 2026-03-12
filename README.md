@@ -30,5 +30,6 @@ I’m not the type to shy away from learning new things, but when I do, I do it 
 ![Netlify](https://img.shields.io/badge/Netlify-000000?logo=netlify&logoColor=00C7B7)
 
 # 📁 Public Project
-💡[Tecnolight](https://github.com/stefaceriani/tecnolight)
-🎨[ChromaShift](https://github.com/stefaceriani/chromashift)
+| | Projects    | Description |
+| --- | --- | --- |
+|🎨|[ChromaShift](https://github.com/stefaceriani/chromashift)    |ChromaShift is a [Spicetify](https://spicetify.app/) extension that lets you change Spotify's colors without touching any theme files. Everything is done through a clean interface injected right into **Settings**.|
