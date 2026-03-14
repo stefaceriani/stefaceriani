@@ -29,6 +29,6 @@ I’m not the type to shy away from learning new things, but when I do, I do it 
 ![Netlify](https://img.shields.io/badge/Netlify-000000?logo=netlify&logoColor=00C7B7)
 
 # 📁 Public Project
-| | Projects    | Description |
-| --- | --- | --- |
-|🎨|[ChromaShift](https://github.com/stefaceriani/chromashift)    |ChromaShift is a [Spicetify](https://spicetify.app/) extension that lets you change Spotify's colors without touching any theme files. Everything is done through a clean interface injected right into **Settings**.|
+| | Projects    | Description | Badge |
+| --- | --- | --- | --- |
+|🎨|[ChromaShift](https://github.com/stefaceriani/chromashift)    |ChromaShift is a [Spicetify](https://spicetify.app/) extension that lets you change Spotify's colors without touching any theme files. Everything is done through a clean interface injected right into **Settings**.| [![Version](https://img.shields.io/github/v/release/stefaceriani/chromashift?logo=github)](https://github.com/stefaceriani/chromashift/releases) [![Spotify](https://img.shields.io/badge/Spotify_Version-lastest-1DB954?logo=spotify&logoColor=white)](https://open.spotify.com) [![Spicetify](https://img.shields.io/badge/Spicetify_Version-2.42.14-FF5C00?logo=spotify&logoColor=white)](https://spicetify.app) [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)](https://spicetify.app/docs/) |
