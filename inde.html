@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChromaShift — Spotify Color Customizer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        ChromaShift
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#colors">Colors</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/stefaceriani/chromashift" target="_blank" class="nav-gh">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="badge">Spicetify Extension</div>
+      <h1 class="hero-title">
+        Paint Your<br />
+        <span class="gradient-text">Spotify</span>
+      </h1>
+      <p class="hero-sub">
+        ChromaShift lets you customize every color in Spotify — live, in real time —
+        directly from the Settings page. No theme files. No restarts.
+      </p>
+      <div class="hero-actions">
+        <a href="#install" class="btn-primary">Get Started</a>
+        <a href="https://github.com/stefaceriani/chromashift" target="_blank" class="btn-ghost">View on GitHub</a>
+      </div>
+      <!-- Fake Spotify card demo -->
+      <div class="demo-card" id="demo-card">
+        <div class="demo-sidebar">
+          <div class="demo-logo">♫</div>
+          <div class="demo-nav-items">
+            <div class="demo-nav-item active"></div>
+            <div class="demo-nav-item"></div>
+            <div class="demo-nav-item"></div>
+            <div class="demo-nav-item"></div>
+          </div>
+          <div class="demo-playlists">
+            <div class="demo-playlist-item"></div>
+            <div class="demo-playlist-item"></div>
+            <div class="demo-playlist-item"></div>
+          </div>
+        </div>
+        <div class="demo-main">
+          <div class="demo-topbar">
+            <div class="demo-search"></div>
+            <div class="demo-avatar"></div>
+          </div>
+          <div class="demo-content">
+            <div class="demo-card-grid">
+              <div class="demo-mini-card"></div>
+              <div class="demo-mini-card"></div>
+              <div class="demo-mini-card"></div>
+            </div>
+            <div class="demo-track-list">
+              <div class="demo-track active"></div>
+              <div class="demo-track"></div>
+              <div class="demo-track"></div>
+            </div>
+          </div>
+          <div class="demo-player">
+            <div class="demo-progress-wrap"><div class="demo-progress"></div></div>
+            <div class="demo-controls">
+              <div class="demo-ctrl"></div>
+              <div class="demo-ctrl play"></div>
+              <div class="demo-ctrl"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Color picker overlay -->
+        <div class="demo-picker">
+          <div class="picker-swatch" data-color="#1db954" style="--c:#1db954"></div>
+          <div class="picker-swatch" data-color="#6e5afc" style="--c:#6e5afc"></div>
+          <div class="picker-swatch" data-color="#e84393" style="--c:#e84393"></div>
+          <div class="picker-swatch" data-color="#f5a623" style="--c:#f5a623"></div>
+          <div class="picker-swatch" data-color="#00bcd4" style="--c:#00bcd4"></div>
+          <div class="picker-swatch" data-color="#ff5722" style="--c:#ff5722"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <p class="section-label">What it does</p>
+      <h2 class="section-title">Everything you need<br/>to make Spotify <em>yours</em></h2>
+      <div class="features-grid">
+        <div class="feature-card" data-delay="0">
+          <div class="feature-icon">
+            <!-- 7 Presets: stack of layered cards with a spark -->
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="14" width="30" height="20" rx="4" stroke="var(--fi-stroke)" stroke-width="1.8"/>
+              <rect x="10" y="10" width="30" height="20" rx="4" stroke="var(--fi-stroke)" stroke-width="1.8" opacity=".45"/>
+              <rect x="14" y="6" width="30" height="20" rx="4" stroke="var(--fi-stroke)" stroke-width="1.8" opacity=".2"/>
+              <circle cx="15" cy="24" r="3.5" fill="var(--fi-accent)" opacity=".9"/>
+              <line x1="22" y1="22" x2="34" y2="22" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="22" y1="27" x2="30" y2="27" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linecap="round" opacity=".5"/>
+            </svg>
+          </div>
+          <h3>7 Presets</h3>
+          <p>Start from Spotify Default, Midnight Blue, Rose Gold, Forest, Cyberpunk, Monochrome or Light Mode — then make it your own.</p>
+        </div>
+        <div class="feature-card" data-delay="1">
+          <div class="feature-icon">
+            <!-- 13 Color Variables: dropper + variable sliders -->
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- dropper body -->
+              <path d="M27 8 L36 17 L20 33 L11 24 Z" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linejoin="round"/>
+              <!-- dropper tip -->
+              <path d="M11 24 L7.5 36.5 L20 33" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- handle -->
+              <line x1="27" y1="8" x2="31" y2="4" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- inner diagonal accent -->
+              <line x1="18" y1="18" x2="28" y2="28" stroke="var(--fi-accent)" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+              <!-- drop at tip -->
+              <circle cx="9.5" cy="35" r="2" fill="var(--fi-accent)" opacity=".9"/>
+            </svg>
+          </div>
+          <h3>13 Color Variables</h3>
+          <p>Control text, subtext, backgrounds, highlights, accent, buttons, sidebar, player bar, cards and notifications.</p>
+        </div>
+        <div class="feature-card" data-delay="2">
+          <div class="feature-icon">
+            <!-- Live Preview: eye + radiating arcs -->
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- eye outline -->
+              <path d="M5 22 C10 13, 34 13, 39 22 C34 31, 10 31, 5 22 Z" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linejoin="round"/>
+              <!-- iris -->
+              <circle cx="22" cy="22" r="5.5" stroke="var(--fi-stroke)" stroke-width="1.8"/>
+              <!-- pupil -->
+              <circle cx="22" cy="22" r="2.2" fill="var(--fi-accent)" opacity=".95"/>
+              <!-- live arcs top-right -->
+              <path d="M32 13 Q36 17, 36 22" stroke="var(--fi-accent)" stroke-width="1.6" stroke-linecap="round" opacity=".7" fill="none"/>
+              <path d="M35 10 Q41 15, 41 22" stroke="var(--fi-accent)" stroke-width="1.4" stroke-linecap="round" opacity=".35" fill="none"/>
+            </svg>
+          </div>
+          <h3>Live Preview</h3>
+          <p>Colors update instantly as you move the picker. No save needed to see the effect.</p>
+        </div>
+        <div class="feature-card" data-delay="3">
+          <div class="feature-icon">
+            <!-- Persistent: pin/bookmark with a checkmark -->
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- bookmark shape -->
+              <path d="M10 6 H34 V38 L22 30 L10 38 Z" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linejoin="round"/>
+              <!-- inner shelf line -->
+              <line x1="10" y1="14" x2="34" y2="14" stroke="var(--fi-stroke)" stroke-width="1.4" opacity=".35"/>
+              <!-- checkmark -->
+              <polyline points="16,22 20.5,27 28,18" stroke="var(--fi-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Persistent</h3>
+          <p>Your choices are saved via <code>Spicetify.LocalStorage</code> and applied automatically on every launch.</p>
+        </div>
+        <div class="feature-card" data-delay="4">
+          <div class="feature-icon">
+            <!-- Export / Import: two opposed arrows around a file -->
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- file body -->
+              <path d="M14 6 H26 L34 14 V38 H14 Z" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M26 6 V14 H34" stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linejoin="round"/>
+              <!-- export arrow (up-right) -->
+              <line x1="20" y1="28" x2="30" y2="18" stroke="var(--fi-accent)" stroke-width="2" stroke-linecap="round"/>
+              <polyline points="24,18 30,18 30,24" stroke="var(--fi-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Export / Import</h3>
+          <p>Share your theme as a <code>.json</code> file. Import any theme from the community in one click.</p>
+        </div>
+        <div class="feature-card" data-delay="5">
+          <div class="feature-icon">
+            <!-- Full Override: CSS curly braces + lightning bolt -->
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- left brace -->
+              <path d="M18 6 C14 6, 12 8, 12 12 L12 18 C12 20, 10 21, 10 22 C10 23, 12 24, 12 26 L12 32 C12 36, 14 38, 18 38"
+                    stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <!-- right brace -->
+              <path d="M26 6 C30 6, 32 8, 32 12 L32 18 C32 20, 34 21, 34 22 C34 23, 32 24, 32 26 L32 32 C32 36, 30 38, 26 38"
+                    stroke="var(--fi-stroke)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <!-- lightning bolt (accent) -->
+              <polyline points="25,14 20,22 24,22 19,30" stroke="var(--fi-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Full Override</h3>
+          <p>Overrides both legacy <code>--spice-*</code> and modern <code>--encore-*</code> Spotify tokens for complete coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR VARIABLES -->
+  <section class="colors" id="colors">
+    <div class="section-inner">
+      <p class="section-label">Customizable colors</p>
+      <h2 class="section-title">13 variables,<br/>infinite combinations</h2>
+      <div class="color-groups">
+        <div class="color-group">
+          <h4>Text</h4>
+          <div class="color-items">
+            <div class="color-item"><span class="ci-dot" style="background:#fff"></span>Main text</div>
+            <div class="color-item"><span class="ci-dot" style="background:#aaa"></span>Subtext</div>
+          </div>
+        </div>
+        <div class="color-group">
+          <h4>Backgrounds</h4>
+          <div class="color-items">
+            <div class="color-item"><span class="ci-dot" style="background:#121212"></span>Main background</div>
+            <div class="color-item"><span class="ci-dot" style="background:#282828"></span>Elevated background</div>
+            <div class="color-item"><span class="ci-dot" style="background:#2a2a2a"></span>Hover / selection</div>
+            <div class="color-item"><span class="ci-dot" style="background:#333"></span>Elevated hover</div>
+          </div>
+        </div>
+        <div class="color-group">
+          <h4>Accent & Buttons</h4>
+          <div class="color-items">
+            <div class="color-item"><span class="ci-dot" style="background:#1db954"></span>Accent color</div>
+            <div class="color-item"><span class="ci-dot" style="background:#1ed760"></span>Primary button</div>
+            <div class="color-item"><span class="ci-dot" style="background:#535353"></span>Disabled button</div>
+          </div>
+        </div>
+        <div class="color-group">
+          <h4>Structure</h4>
+          <div class="color-items">
+            <div class="color-item"><span class="ci-dot" style="background:#000"></span>Sidebar</div>
+            <div class="color-item"><span class="ci-dot" style="background:#181818"></span>Player bar</div>
+            <div class="color-item"><span class="ci-dot" style="background:#181818"></span>Cards</div>
+            <div class="color-item"><span class="ci-dot" style="background:#1db954"></span>Notifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="presets">
+    <div class="section-inner">
+      <p class="section-label">Built-in presets</p>
+      <div class="presets-strip">
+        <div class="preset" data-name="Spotify Default" style="--a:#1db954;--b:#121212;--c:#fff"></div>
+        <div class="preset" data-name="Midnight Blue" style="--a:#4a90e2;--b:#0a0f1e;--c:#cce4ff"></div>
+        <div class="preset" data-name="Rose Gold" style="--a:#e84393;--b:#1a0d14;--c:#ffd6e7"></div>
+        <div class="preset" data-name="Forest" style="--a:#5cb85c;--b:#0d1a0f;--c:#d4edda"></div>
+        <div class="preset" data-name="Cyberpunk" style="--a:#f5e642;--b:#0d0015;--c:#00ffea"></div>
+        <div class="preset" data-name="Monochrome" style="--a:#fff;--b:#111;--c:#999"></div>
+        <div class="preset" data-name="Light Mode" style="--a:#1db954;--b:#fafafa;--c:#333"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INSTALL -->
+  <section class="install" id="install">
+    <div class="section-inner">
+      <p class="section-label">Installation</p>
+      <h2 class="section-title">Up and running<br/>in seconds</h2>
+      <div class="install-tabs">
+        <button class="tab-btn active" data-tab="marketplace">Marketplace <span class="recommended">recommended</span></button>
+        <button class="tab-btn" data-tab="manual">Manual</button>
+      </div>
+      <div class="tab-content" id="tab-marketplace">
+        <ol class="install-steps">
+          <li><span class="step-num">1</span>Open Spotify with Spicetify installed</li>
+          <li><span class="step-num">2</span>Click the <strong>Marketplace</strong> icon in the top bar</li>
+          <li><span class="step-num">3</span>Search for <strong>ChromaShift</strong></li>
+          <li><span class="step-num">4</span>Click <strong>Install</strong> — done!</li>
+        </ol>
+      </div>
+      <div class="tab-content hidden" id="tab-manual">
+        <div class="code-block">
+          <div class="code-header">
+            <span>macOS / Linux</span>
+            <button class="copy-btn" data-code="mac">Copy</button>
+          </div>
+          <pre><code>cp chromashift.js ~/.config/spicetify/Extensions/
+spicetify config extensions chromashift.js
+spicetify apply</code></pre>
+        </div>
+        <div class="code-block">
+          <div class="code-header">
+            <span>Windows (PowerShell)</span>
+            <button class="copy-btn" data-code="win">Copy</button>
+          </div>
+          <pre><code>cp chromashift.js "$env:APPDATA\spicetify\Extensions\"
+spicetify config extensions chromashift.js
+spicetify apply</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO USE -->
+  <section class="howto">
+    <div class="section-inner">
+      <p class="section-label">How to use</p>
+      <h2 class="section-title">Three steps,<br/>full control</h2>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Open Settings</h3>
+          <p>Scroll to the <strong>ChromaShift</strong> section at the bottom of Spotify's Settings page.</p>
+        </div>
+        <div class="step-divider">→</div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Pick Colors</h3>
+          <p>Choose a <strong>preset</strong> or click any color circle to open the picker. Colors update live.</p>
+        </div>
+        <div class="step-divider">→</div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Save & Apply</h3>
+          <p>Click <strong>Save & Apply</strong> to persist. Export as JSON to share your theme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="section-inner">
+      <h2>Make Spotify <span class="gradient-text">yours</span>.</h2>
+      <p>Free. Open source. No restarts required.</p>
+      <div class="cta-actions">
+        <a href="https://github.com/stefaceriani/chromashift" target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          View on GitHub
+        </a>
+        <a href="https://spicetify.app/" target="_blank" class="btn-ghost">Get Spicetify →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo"><span class="logo-dot"></span>ChromaShift</span>
+      <p>A <a href="https://spicetify.app/" target="_blank">Spicetify</a> extension by <a href="https://github.com/stefaceriani" target="_blank">stefaceriani</a>. MIT License.</p>
+      <a href="https://github.com/stefaceriani/chromashift" target="_blank" class="footer-gh">GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
