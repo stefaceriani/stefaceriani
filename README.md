@@ -1,4 +1,4 @@
 <img
-    src="https://gitascii.com/api/stefaceriani?v=1788782858816"
+    src="gitascii.json"
     width="100%"
   />
