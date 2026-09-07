@@ -1,7 +1,7 @@
 # ❔ Who Am I?
 
 <p> Hi 👋, I’m Stefano Ceriani, or Stefanoschio depending on how you know me.
-I mainly work on creating websites and setting up Minecraft plugins, but that’s not all I do…
+I mainly work on creating websites, but that’s not all I do…
 I’ve often been called in for testing and bug fixing.
 I’m not the type to shy away from learning new things, but when I do, I do it my way! I’m open to all kinds of experiences—feel free to reach out.</p>
 
