@@ -6,7 +6,7 @@ I’ve often been called in for testing and bug fixing.
 I’m not the type to shy away from learning new things, but when I do, I do it my way! I’m open to all kinds of experiences—feel free to reach out.</p>
 
 
-## 🌐 Socials:
+# 🌐 Socials:
 <p align="left">
   <a href="https://discord.com/users/1236578850255933450"><img src="https://skillicons.dev/icons?i=discord"></a>&nbsp;
   <a href="https://instagram.com/stefa.ceriani"><img src="https://skillicons.dev/icons?i=instagram"></a>&nbsp;
