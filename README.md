@@ -1,15 +1,19 @@
-# Who i am?
+# ❔ Who Am I?
 
-Hi 👋, I’m Stefano Ceriani, or Stefanoschio depending on how you know me.
+<p> Hi 👋, I’m Stefano Ceriani, or Stefanoschio depending on how you know me.
 I mainly work on creating websites and setting up Minecraft plugins, but that’s not all I do…
 I’ve often been called in for testing and bug fixing.
-I’m not the type to shy away from learning new things, but when I do, I do it my way! I’m open to all kinds of experiences—feel free to reach out.
+I’m not the type to shy away from learning new things, but when I do, I do it my way! I’m open to all kinds of experiences—feel free to reach out.</p>
 
 
 ## 🌐 Socials:
-[![Email](https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white)](mailto:stefano.ceriani@blu.it) 
-[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)]([https://discord.gg/TUOINVITO](https://discord.com/users/1236578850255933450))
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://instagram.com/stefa.ceriani)
+<p align="left">
+  <a href="https://discord.com/users/1236578850255933450"><img src="https://skillicons.dev/icons?i=discord"></a>&nbsp;
+  <a href="https://instagram.com/stefa.ceriani"><img src="https://skillicons.dev/icons?i=instagram"></a>&nbsp;
+  <a href="mailto:stefano.ceriani@blu.it"><img src="https://skillicons.dev/icons?i=gmail"></a>
+</p>
 
 # 💻 Tech Stack:
-<img src="https://gitascii.com/api/stefaceriani?v=1788786919100" width="100%"/>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,python,cpp,cs,c,java,php,bash,react,nextjs,tailwind,nodejs,express,postgres,mysql,sqlite,github,vercel,netlify,vscode,cloudflare,firebase,supabase&perline=13" />
+</p>
