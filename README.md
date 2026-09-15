@@ -15,5 +15,5 @@ I’m not the type to shy away from learning new things, but when I do, I do it 
 
 # 💻 Tech Stack:
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,python,cpp,cs,c,java,php,bash,react,nextjs,tailwind,nodejs,express,postgres,mysql,sqlite,github,vercel,netlify,vscode,cloudflare,firebase,supabase&perline=13" />
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,python,cpp,cs,c,java,php,go,react,nextjs,tailwind,nodejs,express,postgres,mysql,sqlite,github,vercel,netlify,vscode,cloudflare,firebase,supabase&perline=13" />
 </p>
